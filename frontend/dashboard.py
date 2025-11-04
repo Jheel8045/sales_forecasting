@@ -10,7 +10,7 @@ periods = st.number_input("Forecast Weeks Ahead", min_value=1, max_value=52, val
 
 if st.button("Generate Forecast"):
     # Send request to Flask backend
-    response = requests.post("http://127.0.0.1:5000/forecast", json={"periods": periods})
+    response = requests.post("https://sales-forecasting-550p.onrender.com/forecast", json={"periods": periods})
     if response.status_code == 200:
         data = response.json()
         df = pd.DataFrame(data)
