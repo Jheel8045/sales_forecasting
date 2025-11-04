@@ -6,7 +6,9 @@ from prophet import Prophet
 app = Flask(__name__)
 
 # Load saved model
-model = joblib.load(r"C:\Users\jheel\sales forecasting\model\prophet_model.pkl")
+import os
+model_path = os.path.join(os.path.dirname(__file__), "../model/prophet_model.pkl")
+model = joblib.load(model_path)
 
 @app.route('/')
 def home():
