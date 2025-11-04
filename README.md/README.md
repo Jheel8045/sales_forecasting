@@ -64,8 +64,11 @@ Frontend UI	: Streamlit, Plotly
 Model Saving : Joblib
 Version Control :	Git, GitHub 
 Deployment :
-Deployed backend on Vercel.
-Deployed Streamlit frontend on Streamlit Cloud.
+Deployed backend on RENDER.
+Deployed Streamlit frontend on RENDER.
+
+### 🚀 Live Demo
+https://sales-forecasting-1-o94l.onrender.com/
 
 ### 👩‍💻 Author
 Jheel Jain
